@@ -1,0 +1,36 @@
+
+/*------VARS-------*/
+
+$lightgreen: #8eab0f;
+$darkgreen: #718f17;
+$roboto: 'Roboto', sans-serif;
+
+$laptop-l: 1366px;
+$laptop-m: 1280px;
+$laptop-s: 1200px;
+
+$tablet: 1024px;
+
+$mobile-l: 960px;
+$mobile-m: 768px;
+$mobile-s: 550px;
+
+
+/*------MIXINS------*/
+
+
+@mixin roboto-cond {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@mixin pt-serif {
+  font-family: 'PT Serif', serif;
+}
+
+@mixin animate($time) {
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  -ms-transition: all $time;
+  -o-transition: all $time;
+  transition: all $time;
+}

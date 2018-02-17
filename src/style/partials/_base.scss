@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $roboto;
+  font-size: 18px;
+
+  @media (max-width: $laptop-m){
+    font-size: 16px;
+  }
+  @media (max-width: $tablet){
+    font-size: 15px;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  position: relative;
+}
+
+p {
+  margin: 0 0 20px 0;
+}

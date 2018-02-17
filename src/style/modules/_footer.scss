@@ -1,0 +1,64 @@
+@import "../partials/variables";
+
+
+.footer {
+  background: $darkgreen;
+  text-align: center;
+  & .inner {
+    padding: 50px 0;
+  }
+  &--left {
+    width: 49.5%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 15px;
+    margin: 0;
+    &--links {
+      list-style-type: none;
+      padding: 0;
+      & li {
+        margin-bottom: 10px;
+      }
+      & a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &--social {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      & li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 10px 0 0;
+      }
+      & a {
+        color: #fff;
+        font-size: 3em;
+      }
+    }
+  }
+  &--right {
+    @extend .footer--left;
+    text-align: right;
+    &--address {
+      list-style-type: none;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 30px;
+      & li {
+        margin-bottom: 5px;
+      }
+    }
+    &--copyright {
+      color: #fff;
+      & span {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

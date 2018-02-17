@@ -1,0 +1,91 @@
+@import "../partials/variables";
+
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  @include animate(300ms);
+
+  &.fixed {
+    position: fixed;
+    & .nav {
+      padding-top: 0;
+      &--item > a {
+        padding: 10px
+      }
+    }
+
+    & .logo {
+      max-width: 0;
+    }
+  }
+
+  &:hover .header-tint {
+  opacity: 1;
+  }
+
+  & .header-tint {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    @include animate(300ms);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    opacity: 0;
+  }
+
+  & .inner {
+    border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 5;
+  }
+
+  .logo {
+    max-width: 245px;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    @media (max-width: $laptop-s){
+      max-width: 180px;
+    }
+  }
+}
+
+
+.nav {
+  float: right;
+  padding: 0;
+  list-style-type: none;
+  width: 70%;
+  text-align: right;
+  padding-top: 20px;
+  margin: 0;
+  @media (max-width: $laptop-s){
+    padding-top: 10px;
+  }
+  &--item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+    &:first-child {
+      margin: 0;
+    }
+    &:hover > a {
+      background: $lightgreen;
+    }
+    a {
+      display: block;
+      padding: 20px 10px;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      @include animate(300ms);
+    }
+  }
+}

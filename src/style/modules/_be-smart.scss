@@ -1,0 +1,20 @@
+@import "../partials/variables";
+
+
+.be-smart {
+  background: $lightgreen;
+  .text-col {
+    width: 40%;
+    max-width: 500px;
+    padding: 50px 15px;
+  }
+  .fan {
+    width: 60%;
+    max-width: 1000px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+

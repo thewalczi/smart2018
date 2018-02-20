@@ -1,9 +1,26 @@
 
 /*------VARS-------*/
 
+/*COLORS*/
+
 $lightgreen: #8eab0f;
 $darkgreen: #718f17;
+$lightgray: #f0f0f0;
+
+
+/*FONTS*/
+
 $roboto: 'Roboto', sans-serif;
+$roboto-cond: 'Roboto Condensed', sans-serif;
+$pt-serif: 'PT Serif', serif;
+
+
+/*MISC*/
+
+$container-width: 1360px;
+
+
+/*MOBILE WIDTH*/
 
 $laptop-l: 1366px;
 $laptop-m: 1280px;
@@ -16,16 +33,8 @@ $mobile-m: 768px;
 $mobile-s: 550px;
 
 
+
 /*------MIXINS------*/
-
-
-@mixin roboto-cond {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-@mixin pt-serif {
-  font-family: 'PT Serif', serif;
-}
 
 @mixin animate($time) {
   -webkit-transition: all $time;

@@ -6,15 +6,8 @@
 /***** MAIN *****/
 
 .inner {
-  max-width: 1360px;
+  max-width: $container-width;
   margin: 0 auto;
-
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-    width: 100%;
-  }
 }
 
 .col {

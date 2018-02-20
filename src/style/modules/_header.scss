@@ -11,15 +11,39 @@ header {
 
   &.fixed {
     position: fixed;
+    background: $darkgreen;
+
+    & .inner {
+      border: 0;
+    }
+
     & .nav {
       padding-top: 0;
+
       &--item > a {
-        padding: 10px
+        padding: 10px;
+        font-size: 1em;
       }
     }
 
     & .logo {
-      max-width: 0;
+      // max-width: 0;
+      max-width: 100%;
+      width: 10%;
+      padding: 0px;
+      float: left;
+
+      & img {
+        -webkit-filter: grayscale(100%) invert(100%) brightness(500%);
+        -moz-filter: grayscale(100%) invert(100%) brightness(500%);
+        -ms-filter: grayscale(100%) invert(100%) brightness(500%);
+        -o-filter: grayscale(100%) invert(100%) brightness(500%);
+        filter: grayscale(100%) invert(100%) brightness(500%);
+      }
+    }
+
+    & .header-tint {
+      display: none;
     }
   }
 

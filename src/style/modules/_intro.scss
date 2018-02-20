@@ -23,7 +23,7 @@
 
     h1 {
       text-transform: uppercase;
-      @include roboto-cond;
+      font-family: $roboto-cond;
       // font-size: 150px;
       font-size: 8.4em;
       font-weight: 300;
@@ -33,7 +33,7 @@
       @media (max-width: $laptop-m) and (orientation: landscape){
         font-size: 7em;
       }
-      @media (max-width: $tablet) and (orientation: landscape){
+      @media (max-width: $tablet){
         font-size: 6em;
       }
 
@@ -41,7 +41,7 @@
         display: block;
         // font-size: 120px;
         font-size: 1em;
-        @include pt-serif;
+        font-family: $pt-serif;
         text-transform: lowercase;
       }
     }

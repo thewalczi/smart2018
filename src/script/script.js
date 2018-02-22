@@ -38,4 +38,17 @@ $(document).ready(function() {
         }
     });
 
-})
+
+// $(window).on('load resize', function() {
+
+//     var windowW = $(window).width();
+
+//     if (windowW < 768) {
+//         $('.nav').addClass('nav-mobile');
+//     } else {
+//         $('.nav').removeClass('nav-mobile');
+//     }
+//     ;
+// });
+});
+

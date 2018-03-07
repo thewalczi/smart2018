@@ -71,6 +71,11 @@
   min-width: 250px;
   @include animate(300ms);
 
+  @media (max-width: $mobile-m){
+    padding: 12px;
+    min-width: 200px;
+  }
+
   &--white {
     color: #fff;
   }

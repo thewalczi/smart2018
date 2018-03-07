@@ -19,7 +19,6 @@
     transform: translateY(-50%);
     text-align: left;
     color: #fff;
-    padding: 10px;
 
     h1 {
       text-transform: uppercase;
@@ -28,20 +27,29 @@
       font-weight: 300;
       line-height: 0.9em;
       margin: 0;
+      padding: 10px;
 
       @media (max-width: $laptop-m) and (orientation: landscape){
         font-size: 7em;
       }
+
       @media (max-width: $tablet){
         font-size: 6em;
       }
 
+      @media (max-width: $mobile-m){
+        font-size: 4.5em;
+      }
+
       span {
         display: block;
-        // font-size: 120px;
         font-size: 1em;
         font-family: $pt-serif;
         text-transform: lowercase;
+
+        @media (max-width: $mobile-m) and (orientation: landscape){
+          display: inline;
+        }
       }
     }
   }

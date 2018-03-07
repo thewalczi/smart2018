@@ -10,8 +10,13 @@ body {
   @media (max-width: $laptop-m){
     font-size: 16px;
   }
+
   @media (max-width: $tablet){
     font-size: 15px;
+  }
+
+  @media (max-width: $mobile-m){
+    font-size: 14px;
   }
 
   * {

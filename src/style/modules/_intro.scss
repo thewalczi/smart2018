@@ -33,21 +33,26 @@
         font-size: 7em;
       }
 
-      @media (max-width: $tablet){
+      @media (max-width: $tablet) and (orientation: landscape) {
         font-size: 6em;
       }
 
-      @media (max-width: $mobile-m){
-        font-size: 4.5em;
+      @media (max-width: $mobile-s) {
+        font-size: 5.3em;
       }
 
+      @media(max-width: $mobile-m) and (orientation: landscape),
+      (max-width: $tablet) and (max-height: $mobile-s) {
+        font-size: 4.5em;
+
+      }
       span {
         display: block;
         font-size: 1em;
         font-family: $pt-serif;
         text-transform: lowercase;
 
-        @media (max-width: $mobile-m) and (orientation: landscape){
+        @media (max-height: $mobile-s) and (orientation: landscape){
           display: inline;
         }
       }

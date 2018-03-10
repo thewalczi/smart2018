@@ -70,7 +70,7 @@
     @media (max-width: $mobile-m){
       padding: 5px 15px;
       flex: none;
-      max-width: 172px;
+      max-width: 145px;
       width: 100%;
     }
   }
@@ -148,8 +148,8 @@
     .nav.nav-mobile & {
       display: block;
       background: $darkgreen;
-      width: 55px;
-      height: 55px;
+      width: 45px;
+      height: 45px;
       padding: 12px;
       text-align: center;
       margin: 0;
@@ -162,12 +162,12 @@
     &:after {
       content: '\f0c9';
       font-family: fontawesome;
-      font-size: 40px;
-      width: 55px;
-      height: 55px;
+      font-size: 37px;
+      width: 45px;
+      height: 45px;
       position: absolute;
       right: 100%;
-      padding-top: 8px;
+      padding-top: 5px;
       color: #fff;
       background: $darkgreen;
       box-sizing: border-box;
@@ -217,5 +217,9 @@
     flex: none;
     margin-left: 0;
     width: 100%;
+
+    a {
+      padding: 12px 5px;
+    }
   }
 }

@@ -26,64 +26,49 @@ $(document).ready(function() {
     });
 
 
-    /*ADDING CLASS TO HEADER ON SCROLL*/
-
-    $(window).on('load scroll', function() {
-
-        var scrollPosition = 0;
-
-        if ($(window).scrollTop() > scrollPosition) {
-            $('.header-bar').addClass('header-bar--scroll');
-        } else {
-            $('.header-bar').removeClass('header-bar--scroll');
-        }
-    });
-
-    /*CHANGED NAV TO MOBILE-NAV ON RESIZE*/
-
-
-    $(window).on('load resize', function() {
-
-        // var menuOpen = 0;
-        // var navList = $('.nav.nav-mobile > ul');
-        var windowW = $(window).outerWidth();
-
-        setTimeout(function() {
-            if (windowW < 768) {
-                $('.nav').addClass('nav-mobile');
-            } else {
-                $('.nav').removeClass('nav-mobile');
-            }
-
-        }, 100)
-
-        setTimeout(function() {
-            $('.nav').css('opacity', '1');
-        }, 300);
-
-
-
-
-        // $('.nav-mobile--btn').click(function() {
-
-        //     if (menuOpen == 0) {
-        //         navList.animate({
-        //             'marginRight': '0px'
-        //         }, 100);
-        //         menuOpen = 1;
-        //     } else if (menuOpen == 1) {
-        //         navList.animate({
-        //             'marginRight': '-250px'
-        //         }, 100)
-        //         menuOpen = 0;
-        //     }
-        //     console.log(menuOpen);
-        // });
-
-    });
-
     /*SLIDE MENU ON SCROLL*/
 
 
 });
 
+
+/*ADDING CLASS TO HEADER ON SCROLL*/
+
+$(window).on('load scroll', function() {
+
+    var scrollPosition = 5;
+
+    if ($(window).scrollTop() > scrollPosition) {
+        $('.header-bar').addClass('header-bar--scroll');
+    } else {
+        $('.header-bar').removeClass('header-bar--scroll');
+    }
+});
+
+
+
+/*CHANGED NAV TO MOBILE-NAV ON RESIZE*/
+
+
+$(window).on('load resize', function() {
+
+
+    var windowW = $(window).outerWidth();
+
+    $('.nav').css('opacity', '0');
+
+    setTimeout(function() {
+        if (windowW < 768) {
+            $('.nav').addClass('nav-mobile');
+        } else {
+            $('.nav').removeClass('nav-mobile');
+        }
+
+        setTimeout(function() {
+            $('.nav').animate({
+                'opacity': 1
+            }, 200);
+        }, 100);
+    }, 100)
+
+});

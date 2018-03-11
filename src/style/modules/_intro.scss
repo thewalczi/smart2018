@@ -10,15 +10,19 @@
   &--inner {
       min-height: 100%;
       position: relative;
+      padding: 0 15px;
   }
 
   &--text {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 0;
     transform: translateY(-50%);
     text-align: left;
     color: #fff;
+    opacity: 0;
+    padding: 10px;
+    @include animate(800ms);
 
     h1 {
       text-transform: uppercase;
@@ -27,7 +31,7 @@
       font-weight: 300;
       line-height: 0.9em;
       margin: 0;
-      padding: 10px;
+      margin-bottom: 15px;
 
       @media (max-width: $laptop-m) and (orientation: landscape){
         font-size: 7em;
@@ -57,5 +61,8 @@
         }
       }
     }
+  }
+  &--btn {
+    cursor: pointer;
   }
 }

@@ -28,14 +28,14 @@ $(document).ready(function() {
 
     /*SCROLL TO ELEMENT*/
 
-    $(".nav--item > a").click(function() {
+    $(".nav--item > a, .intro--btn").click(function() {
 
         var scrollTarget = $(this).attr('data-target');
         var headerH = $("header").height();
 
         $('html, body').animate({
-            scrollTop: $("#" + scrollTarget).offset().top - headerH + 1
-        }, 1000);
+            scrollTop: $("#" + scrollTarget).offset().top - headerH + 2
+        }, 1200);
     });
 
 
@@ -84,3 +84,12 @@ $(window).on('load resize', function() {
 });
 
 
+/*LAZY LOAD INTRO*/
+
+$(window).on('load', function() {
+
+    $('.intro--text').css({
+        top: '50%',
+        opacity: 1
+    });
+});

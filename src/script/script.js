@@ -26,7 +26,17 @@ $(document).ready(function() {
     });
 
 
-    /*SLIDE MENU ON SCROLL*/
+    /*SCROLL TO ELEMENT*/
+
+    $(".nav--item > a").click(function() {
+
+        var scrollTarget = $(this).attr('data-target');
+        var headerH = $("header").height();
+
+        $('html, body').animate({
+            scrollTop: $("#" + scrollTarget).offset().top - headerH + 1
+        }, 1000);
+    });
 
 
 });
@@ -72,3 +82,5 @@ $(window).on('load resize', function() {
     }, 100)
 
 });
+
+

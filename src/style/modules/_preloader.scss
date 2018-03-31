@@ -1,0 +1,35 @@
+@import "../partials/variables";
+
+.preloader {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $darkgreen;
+	z-index: 10000;
+
+	&--logo{
+		max-width: 150px;
+		width: 80%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: translate(50% 50%);
+		animation: logoAnim 1s infinite;
+	}
+}
+
+
+@keyframes logoAnim {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(15deg);}
+	20% {transform: rotate(-12deg);}
+	30% {transform: rotate(9deg);}
+	40% {transform: rotate(-6deg);}
+	50% {transform: rotate(3deg);}
+	60% {transform: rotate(0deg);}
+}

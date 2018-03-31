@@ -88,8 +88,16 @@ $(window).on('load resize', function() {
 
 $(window).on('load', function() {
 
-    $('.intro--text').css({
-        top: '50%',
-        opacity: 1
-    });
+    setTimeout(function() {
+
+        $('.intro--text').css({
+            top: '50%',
+            opacity: 1
+        });
+    }, 1000);
 });
+
+
+$(window).on('load', function() {
+    $('.preloader').fadeOut(1000);
+})

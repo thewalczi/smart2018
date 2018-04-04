@@ -70,8 +70,10 @@ $(window).on('load resize', function() {
     setTimeout(function() {
         if (windowW < 768) {
             $('.nav').addClass('nav-mobile');
+            $('.nav.nav-mobile ul').css('display', 'none');
         } else {
             $('.nav').removeClass('nav-mobile');
+            $('.nav ul').css('display', 'flex');
         }
 
         setTimeout(function() {
@@ -82,6 +84,25 @@ $(window).on('load resize', function() {
     }, 100)
 
 });
+
+/* MENU OPEN */
+
+$(window).on('load resize', function() {
+
+    var navOpen = 0;
+
+    $('.nav-mobile--btn, .nav--item').click(function() {
+        if (navOpen == 0) {
+            $('.nav-mobile ul').css('display', 'flex');
+            navOpen = 1;
+        } else if (navOpen == 1) {
+            $('.nav-mobile ul').css('display', 'none');
+            navOpen = 0;
+        }
+        ;
+    })
+});
+
 
 
 /*LAZY LOAD INTRO*/

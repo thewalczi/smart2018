@@ -99,7 +99,6 @@ $(window).on('load resize', function() {
             $('.nav-mobile ul').css('display', 'none');
             navOpen = 0;
         }
-        ;
     })
 });
 

@@ -74,16 +74,15 @@
 			max-height: 550px;
 			min-height: 350px;
 
-			@media (max-width: $mobile-m) {
-				min-height: 0px;
-			}
-
 			img {
 				max-height: 520px;
-				max-width: 430px;
+				max-width: 100%;
 				width: auto;
 				align-self: flex-end;
-				// flex-basis: 400px;
+			}
+
+			@media (max-width: $mobile-m) {
+				min-height: 0px;
 			}
 
 			@media (max-width: $mobile-s){

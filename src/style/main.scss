@@ -3,22 +3,11 @@
 @import "partials/base";
 @import "partials/layout";
 
+@import "modules/preloader";
 @import "modules/header";
 @import "modules/intro";
 @import "modules/be-smart";
 @import "modules/slider";
 @import "modules/products";
 @import "modules/footer";
-
-
-
-// .qlinks {background: $lightgray;
-//   background: url('../img/laundry-bg.jpg') no-repeat 50% 50%;
-//   &--inner {
-//     padding: 50px 5px;
-//   }
-// }
-
-
-
 
